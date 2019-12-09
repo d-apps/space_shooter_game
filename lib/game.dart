@@ -59,7 +59,7 @@ class SpaceShooterGame extends BaseGame with PanDetector{
 
   @override
   void onPanUpdate(DragUpdateDetails details) {
-    player.move(details.delta.dx, details.delta.dy);
+    player?.move(details.delta.dx, details.delta.dy);
   }
 
   void increaseScore(){
